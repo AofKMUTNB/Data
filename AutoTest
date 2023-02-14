@@ -1,0 +1,15 @@
+import { chromium } from 'playwright';
+
+(async () => {
+  const browser = await chromium.launch();
+  const context = await browser.newContext();
+  const page = await context.newPage();
+  await page.goto('https://anirutplodprong.com/login.php');
+  await page.fill('#username', 'username');
+  await page.fill('#password', 'password');
+  await Promise.all([
+    page.click('#submit'),
+    page.waitForNavigation(),
+  ]);
+  await browser.close();
+})();
