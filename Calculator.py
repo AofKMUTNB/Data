@@ -12,5 +12,4 @@ print("Difference of the numbers: ", num1 - num2)
 
 print("Product of the numbers: ", num1 * num2)
 
-
 print("Quotient of the numbers: ", num1 / num2)
