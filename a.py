@@ -1,16 +1,11 @@
-print("Welcome to the Calculator")
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as srs
+x = ['Shirt','Pants','Shorts','Shoes']
+y = [1000,1200,800,200]
 
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
-
-# Addition
-print("Sum of the numbers: ", num1 + num2)
-
-# Subtraction6ุ
-print("Difference of the numbers: ", num1 - num2)
-
-# Multiplication
-print("Product of the numbers: ", num1 * num2)
-
-# Division
-print("Quotient of the numbers: ", num1 / num2)
+plt.bar(x,y)
+plt.title('Sale')
+plt.xlabel('Catagory')
+plt.ylabel('Price')
+plt.show()
